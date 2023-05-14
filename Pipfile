@@ -1,0 +1,28 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+azure-mgmt-datafactory = "==0.14.0"
+azure-storage-blob = "==12.4.0"
+azure-storage-file-share = "==12.1.2"
+pymssql = "*"
+psycopg2 = "*"
+pandas = "*"
+sqlalchemy = "*"
+pyarrow = "*"
+pymongo = "*"
+boto3 = "*"
+xlrd = "==1.2.0"
+google-cloud-bigquery = "*"
+google-cloud-storage = "*"
+google-auth-oauthlib = "*"
+google-api-python-client = "*"
+pandas-gbq = "==0.17.7"
+paramiko = "*"
+
+[requires]
+python_version = "3.7"
