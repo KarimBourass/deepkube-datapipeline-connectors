@@ -16,7 +16,7 @@ requires = [
 ]
 setup(
     name='connectors',
-    version='0.1.0',
+    version='1.0.0',
     description='A set of connectors to import and upload data from/to multiple storage',
     url='git@github.com:KarimBourass/deepkube-datapipeline-connectors.git',
     author='Karim Bourass',
