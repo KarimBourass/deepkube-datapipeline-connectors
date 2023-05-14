@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from abc import ABC, abstractmethod
+from connectors.api_connectors.get_api_connector import GetAPIConnecot
 from connectors.cloud_connectors.azure_connectors.blob_connector import BlobConnector
 from connectors.cloud_connectors.gcp_connectors.gcp_big_query import GCPBigQueryonnector
 from connectors.cloud_connectors.gcp_connectors.gcp_cloud_storage import GCPCloudStorageConnector
@@ -56,6 +57,9 @@ class ConnectorFactory(ABC):
             return connector
         elif type == 'sftp':
             connector = SftpServer(**connector_settings)
+            return connector
+        elif type == 'api':
+            connector = GetAPIConnecot(**connector_settings)
             return connector
         else:
             print(f'{type} is not a valid check')
